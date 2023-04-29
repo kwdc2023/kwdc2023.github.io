@@ -10,6 +10,9 @@ body {
 }
 
 .kwdc-body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,9 +20,14 @@ body {
 }
 
 img {
+  position: absolute;
   max-width: 1400px;
   width: 95%;
   height: 95%;
+  object-fit: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .kwdc-header {
@@ -30,6 +38,7 @@ img {
   font-size: 40px;
   font-weight: 700;
   padding: 20px;
+  z-index: 99;
 }
 
 .kwdc-logo {
@@ -104,10 +113,18 @@ img {
 
 @media (max-width: 767px) {
   img {
-    content: url("./images/forMobile.jpg");
+    content: url("./images/forMobile2.jpg");
+    object-fit: contain;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .kwdc-body {
   }
   .kwdc-header {
     font-size: 20px;
+    padding: 10px;
   }
 
   .content > ul > li {
