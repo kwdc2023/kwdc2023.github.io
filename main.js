@@ -3,12 +3,12 @@ let conductButton = document.querySelector(".conduct");
 let termsButton = document.querySelector(".terms");
 
 kwdclogoButton.addEventListener("click", (e) => {
-  location.href = "/index.html";
+  location.href = "/.";
 });
 
 conductButton.addEventListener("click", (e) => {
   if (e.target.className.indexOf("active") > 0) {
-    location.href = "/index.html";
+    location.href = "/.";
   } else {
     console.log(e.target.className);
     location.href = "/conduct.html";
@@ -17,7 +17,7 @@ conductButton.addEventListener("click", (e) => {
 
 termsButton.addEventListener("click", (e) => {
   if (e.target.className.indexOf("active") > 0) {
-    location.href = "/index.html";
+    location.href = "/.";
   } else {
     console.log(e.target.className);
     location.href = "/terms.html";
