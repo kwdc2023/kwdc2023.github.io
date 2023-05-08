@@ -136,6 +136,10 @@ img {
   padding: 10px;
 }
 
+.sub-content-body-bottom {
+  margin-bottom: 80px;
+}
+
 .sub-content-boxes {
   display: inline-flex;
   justify-content: center;
